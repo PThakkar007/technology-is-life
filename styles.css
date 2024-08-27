@@ -1,0 +1,270 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    background-image: url('pngtree-website-science-and-technology-light-effect-ring-background-picture-image_2448025-transformed.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+header {
+    background-color: rgba(36, 37, 65, 0.8);
+    color: #fff;
+    padding: 15px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+/* Styling for the Home Page Only */
+.home-page .hero-section {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.home-page .hero-content h2 {
+    font-size: 3rem;
+}
+
+.home-page .hero-content p {
+    font-size: 1.5rem;
+}
+
+.home-page .hero-section .btn {
+    background-color: #007BFF;
+    padding: 15px 25px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.home-page .hero-section .btn:hover {
+    background-color: #0056b3;
+}
+
+.home-page #products {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 100px 50px;
+    text-align: center;
+    color: #fafbfc;
+}
+
+.home-page .product-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.home-page .product-card {
+    background-color: rgb(20, 171, 158);
+    color: white;
+    border: 1px solid #010101;
+    border-radius: 5px;
+    width: 30%;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.home-page .product-card:hover {
+    transform: scale(1.05);
+}
+
+.home-page .product-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.home-page .product-card h3 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
+.home-page .product-card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.home-page .product-card .btn {
+    background-color: #007BFF;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.home-page .product-card .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Product Pages Specific Styling */
+.product-page .product-container {
+    display: block; /* Single product per page */
+    padding: 50px;
+    text-align: center;
+}
+
+.product-page .product-card {
+    width: 100%; /* Ensure product takes full width */
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-page .product-card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Ensures image does not crop */
+    margin-bottom: 20px;
+}
+
+.product-page .product-card h3 {
+    font-size: 2rem;
+    margin: 20px 0;
+    color: black;
+}
+
+.product-page .product-card p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.product-page .btn {
+    background-color: #007BFF;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.product-page .btn:hover {
+    background-color: #0056b3;
+}
+
+/* About Section */
+#about {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 50px 20px;
+    color: white;
+    text-align: center;
+}
+
+/* Contact Section */
+#contact {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Section */
+footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home-page .product-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 576px) {
+    .home-page .product-card {
+        width: 100%;
+    }
+}
